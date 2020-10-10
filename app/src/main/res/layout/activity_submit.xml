@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Submit">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:padding="10dp"
+        android:theme="@style/DarkNoActionBar"
+        app:collapseIcon="@drawable/abc_vector_test"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/abc_vector_test"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <ImageView
+            android:layout_width="180sp"
+            android:layout_height="70dp"
+            android:src="@drawable/gads"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="10dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Project Submission"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#ff9900"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="72dp"
+            android:background="@drawable/under_project"
+            android:shadowColor="@android:color/darker_gray"
+            android:shadowDx="3"
+            android:shadowDy="5"
+            android:shadowRadius="5"
+            android:text="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             "
+            android:textSize="2sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="46sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/text_box"
+            android:fontFamily="sans-serif-medium"
+            android:hint="First Name"
+            android:textAlignment="textStart"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="46sp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/text_box"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Last Name"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+        <EditText
+            android:id="@+id/textView5"
+            android:layout_width="0dp"
+            android:layout_height="46sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/text_box"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Email Address"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <EditText
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="46sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/text_box"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Project Link On Github"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="167sp"
+            android:layout_height="43sp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="124dp"
+            android:background="@drawable/orange_button"
+            android:fontFamily="sans-serif-black"
+            android:shadowColor="@android:color/darker_gray"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="10"
+            android:text="Submit"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
